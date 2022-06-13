@@ -212,6 +212,7 @@ function to_zenodo($reference, $figure, $community = '')
 
 
 $filename = 'PII-S0254629916339242.xml';
+$filename = 'S1055790318306894.xml';
 
 $xml = file_get_contents($filename);
 
@@ -380,7 +381,7 @@ if (!file_exists($reference->pdf_filename))
 
 // upload reference to zenodo
 
-if (0)
+if (1)
 {
 	$metadata = to_zenodo ($reference, null, 'biosyslit');
 
@@ -462,7 +463,7 @@ foreach($nodeCollection as $node)
 	
 	//print_r($figure);
 	
-	if (0)
+	if (1)
 	{
 	
 		$metadata = to_zenodo ($reference, $figure, 'biosyslit');

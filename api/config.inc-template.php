@@ -20,6 +20,10 @@ $config['cache_dir'] 		= dirname(__FILE__) . '/cache';
 $config['pdftoxml']			= dirname(__FILE__) . '/pdftoxml/pdftoxml';
 $config['output_dir']		= dirname(__FILE__) . '/output';
 
+// Elsevier-------------------------------------------------------------------------------
+$config['elsever']			= '<get from Elsevier';
+
+
 // Zenodo---------------------------------------------------------------------------------
 
 if (1)
