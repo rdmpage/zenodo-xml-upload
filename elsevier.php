@@ -371,17 +371,15 @@ $reference->pdf_filename = $reference->pii . '.pdf';
 
 print_r($reference);
 
-
 if (!file_exists($reference->pdf_filename))
 {
 	$pdf = get($reference->pdf );
 	file_put_contents($reference->pdf_filename, $pdf);
 }
 
-
 // upload reference to zenodo
 
-if (1)
+if (0)
 {
 	$metadata = to_zenodo ($reference, null, 'biosyslit');
 
@@ -463,7 +461,7 @@ foreach($nodeCollection as $node)
 	
 	//print_r($figure);
 	
-	if (1)
+	if (0)
 	{
 	
 		$metadata = to_zenodo ($reference, $figure, 'biosyslit');
